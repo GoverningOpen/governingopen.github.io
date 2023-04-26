@@ -28,7 +28,9 @@ Most pull requests to a project, especially those from an outside contributor, r
 
 New reviewers should be encouraged to ask questions. This not only helps them learn about the project, it can sometimes be a signal that the code or documentation needs to be more readable. 
 
-Projects which encourage PR reviews from new/outside contributors include [Ansible](https://docs.ansible.com/ansible/latest/community/how_can_I_help.html#review-and-submit-pull-requests), [Fast API](https://fastapi.tiangolo.com/help-fastapi/#review-pull-requests), [Apache Beam](https://blogs.apache.org/comdev/entry/an-approach-to-community-building), and [Kubernetes](https://kubernetes.io/docs/contribute/review/reviewing-prs/).
+Projects which encourage PR reviews from new/outside contributors include [CircuitPython](https://learn.adafruit.com/contribute-to-circuitpython-with-git-and-github/giving-a-review), [Ansible](https://docs.ansible.com/ansible/latest/community/how_can_I_help.html#review-and-submit-pull-requests), [Fast API](https://fastapi.tiangolo.com/help-fastapi/#review-pull-requests), [Apache Beam](https://blogs.apache.org/comdev/entry/an-approach-to-community-building), and [Kubernetes](https://kubernetes.io/docs/contribute/review/reviewing-prs/).
+
+CircuitPython has a particularly detailed and helpful [guide for new reviewers](https://learn.adafruit.com/contribute-to-circuitpython-with-git-and-github/giving-a-review).
 
 ### Release Notes and User-facing Release Summaries
 
