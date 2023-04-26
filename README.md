@@ -1,6 +1,8 @@
-# Open Source Governance Workshop
+# The Governance of Open Source
 
-This repository contains materials (guides, exercises, etc) for open source projects looking to tackle various governance challenges. It is structured so that organizers can run workshops at meetups and conferences to introduce these resources to open source teams. We believe that by learning about how past projects have tackled problems, we can avoid unnecessary stress and cultivate happier, more functional communities.
+This repository contains materials (guides, exercises, etc) for open source projects looking to tackle various governance challenges. We believe that by learning about how past projects have tackled problems, we can avoid unnecessary stress and cultivate happier, more functional communities.
+
+The repository also contains a bare bones static site generator to display these materials via github pages.
 
 The repository is structured around **Governance Challenges** which are specific challenges that recur across many different projects. These include, but are not limited to:
 
@@ -16,17 +18,26 @@ For each challenge identified, we seek to collect exercises, tools, wisdom and a
 
 # Ways to Contribute
 
-## Suggest a new challenge
+## Suggest new challenges and resources
 
 We use our issue tracker to discuss [new challenges](https://github.com/shaunagm/Open-Source-Governance-Workshop/labels/new%20challenge). Anyone is welcome to suggest a challenge, but please check for duplicates first. Please select the [new challenge issue template](https://github.com/shaunagm/Open-Source-Governance-Workshop/tree/main/.github/ISSUE_TEMPLATE) when prompted.
 
-## Flesh out a challenge
+Each challenge has resources associated with it. These are exercises, tools, stories, etc that projects can learn from. You can suggest new resources (or flesh out existing ones) by leaving a comment on the associated challenge.
 
-Once a challenge has been accepted, we need to add a corresponding Markdown file in the repository. It should copy [this basic template](https://github.com/shaunagm/Open-Source-Governance-Workshop/blob/main/challenge_template.md). Please try to include any existing resources that have been shared in the corresponding issue thread.
+## Add new challenges or resources on the site
 
-## Add a resource to a challenge
+Once a challenge or resource has been developed enough, it can be added to the site through a pull request. The steps are broadly the same for challenges and resources.
 
-Each challenge's Markdown file has a section labeled **Resources**. These are exercises, tools, stories, etc that projects can learn from. You are always welcome to add new resources to an existing challenge. In rare cases you may want to add the same resource to multiple challenges; in this case, reach out to the community for help, as you will likely want to customize the explanatory text for the resource to fit the challenge it is meant to help with.
+To add a new challenge/resource, go to the corresponding subdirectory under the top level `content` directory. Copy an existing file and remove the existing metadata values and content. You can then add your own.
+
+A few notes:
+
+* All metadata must go at the top of the file with no blank lines between them.
+* Metadata keys are not case-sensitive.
+* Authors are primary creators of the page for a challenge or resource, so if you're adding one you're an author. If you're making a minor edit to a file you'd add yourself as a contributor.
+* Resources have an extra metadata field, "Challenge". This allow us to display associated resources on the challenge page.
+
+If you're up for it, feel free to build the site and check that the file looks the way you want, but I will also be double-checking when reviewing PRs so you can skip that step if you want.
 
 ## Organize a workshop
 
