@@ -30,9 +30,9 @@ jobs:
         run: pip install -r requirements.txt
       - name: generate site
         run: python generate_site.py
-      - name: create build artifact for upload
-        run: tar -czvf artifact output
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1    
+        with:
+          path: 'output'
       - name: Deploy GitHub Pages site
         uses: actions/deploy-pages@v2.0.1
