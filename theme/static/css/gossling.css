@@ -1,0 +1,9 @@
+blockquote {
+    padding-left: 20px;
+    font-style: italic;
+}
+
+div.text-left h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
