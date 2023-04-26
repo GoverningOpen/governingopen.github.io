@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+Challenge: {% block title %} {{title}} {% endblock %}
+
+{% block content %}
+
+<section class="pt-4">
+    <div class="container px-lg-5">
+        <div class="row gx-lg-5">
+            <div class="p-4 p-lg-5 bg-light rounded-3">
+                <div class="m-4 m-lg-5 text-center">
+                    <h1 class="display-5 fw-bold">{{ title }}</h1>
+                    <h3 class="text-info">by {{ author }}</h3>
+                </div>
+                <div class="m-4 m-lg-5 text-left p4-3">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %} Resources {% endblock %}
+
+{% block content %}
+
+<section class="pt-4">
+    <div class="container px-lg-5">
+        <div class="row gx-lg-5">
+            <div class="p-4 p-lg-5 bg-light rounded-3">
+                <div class="m-4 m-lg-5 text-center">
+                    <h1 class="display-5 fw-bold">Resources</h1>
+                </div>
+                <div class="m-4 m-lg-5 text-left p4-3">
+                    Here's some stuff about resources.
+                </div>
+            </div>
+        </div>
+
+        <div class="row gx-lg-5 p-5"></div>
+
+        <div class="row gx-lg-5 p-3">
+            {% for resource in resources %}
+
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class="feature bg-info bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-tools bg-info"></i></div>
+                            <h2 class="fs-4 fw-bold"><a class="text-info" href="{{resource.url}}">{{resource.title}}</a></h2>
+                            <p class="mb-0">{{resource.summary}}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
