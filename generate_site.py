@@ -1,7 +1,11 @@
 import shutil
+from os import listdir, makedirs
 from jinja2 import Environment, FileSystemLoader
 import utils, config
 
+
+# Create output directory if needed
+makedirs("./output", exist_ok=True)
 
 # Copy assets
 shutil.copytree("./theme/static", "./output/static", dirs_exist_ok=True)
