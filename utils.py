@@ -3,7 +3,7 @@ from os import listdir, makedirs
 from os.path import isfile, join
 from jinja2 import Environment, FileSystemLoader
 
-from config import serverpath, local
+from config import serverpath
 
 
 env = Environment(loader=FileSystemLoader('theme/templates'))

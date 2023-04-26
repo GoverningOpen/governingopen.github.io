@@ -1,4 +1,9 @@
-# Config
-local = True
-sourcepath = "http://0.0.0.0:8000/output/"  # where the files are written to
-serverpath = "http://0.0.0.0:8000/"  # the path the site is served on
+import os
+
+local_development = os.environ.get("LOCAL_DEVELOPMENT", False)
+
+
+if local_development:
+    serverpath = "http://0.0.0.0:8000/"  # the path the site is served on
+else:
+    serverpath = "https://shaunagm.github.io/Governance-of-Open-Source/"
