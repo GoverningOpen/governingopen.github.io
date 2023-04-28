@@ -6,7 +6,7 @@ Many projects have a BDFL/sole maintainer structure not because that person want
 
 Signs a project needs more leaders include:
 
-* the maintainer is starting to feel [burned out]("/resources/signs-of-burnout/")
+* the maintainer is starting to feel [burned out]("https://governingopen.com/resources/signs-of-burnout")
 * all decisions are going through the maintainer, even when they don't have to
 * there are members of the community that want to help, but they don't know how
 

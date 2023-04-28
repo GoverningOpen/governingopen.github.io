@@ -42,7 +42,7 @@ Some projects also write up blog posts and social media summaries of major relea
 
  For larger, more active communities with busy chats or mailing lists, other kinds of summaries, beyond release notes, may be helpful. Longtime Python core developer and current Steering Council member Brett Cannon spent his early days in the Python community writing up mailing list summaries, which were greatly valued by the community.
 
- New contributors may also serve as notetaker during group meetings. Toshio Kuratomi writes about their experience doing this for a larger project: 
+ New contributors may also serve as notetaker during group meetings. Toshio Kuratomi writes about their experience doing this for the Fedora Packaging Committee: 
  
 > People would meet, discuss, debate, and try to improve proposals. Being the person that took notes gave me insight into:
 > 
