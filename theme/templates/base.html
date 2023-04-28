@@ -13,6 +13,20 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{base_url}}/static/css/styles.css" rel="stylesheet" />
         <link href="{{base_url}}/static/css/gossling.css" rel="stylesheet" />
+
+
+        <!-- OpenGraph data -->
+        <meta property="og:title" content="{% if title %}{{ title }}{% else %}Governing Open{% endif %}">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://governingopen.com/static/assets/goslings.jpg">
+        <meta property="og:url" content="{% if url %}{{ url }}{% else %}https://governingopen.com{% endif %}">
+        <meta property="og:description" content="{% if summary %}{{ summary }}{% else %}Sharing open source governance resources and insights.{% endif %}" />
+        <meta property="og:determiner" content="the" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Governing Open Source" />
+
+
+
     </head>
     <body class="d-flex flex-column min-vh-100">
         <div class="wrapper flex-grow-1">
