@@ -13,7 +13,7 @@ def is_metadata(line: str) -> dict:
     """Short helper function which takes a line and tests if it is metadata, with a colon dividing a key-value pair. Also
     checks that the key is one of the valid metadata tags, that it is lower-cased for use in the templates, and it strips 
     newlines from the values."""
-    VALID_METADATA_TAGS = ["title", "authors", "contributors", "challenge", "summary"]
+    VALID_METADATA_TAGS = ["title", "authors", "contributors", "challenge", "challenges", "summary"]
     tokens = line.split(":")
     if len(tokens) == 2 and tokens[0].lower() in VALID_METADATA_TAGS:
         return {tokens[0].lower(): tokens[1].strip("\n").strip(" ")}
@@ -84,7 +84,7 @@ def get_data_from_markdown_files(file_category: str) -> dict:
 def get_resources_given_challenge(data, challenge_file=""):
     resources = []
     for resource in data["resources"]:
-        if f"{resource.get('challenge', None)}.html" == challenge_file:
+        if challenge_file[:-5] in resource.get('challenge', []):  # note - :-5 strips ".html" from file name
             resources.append(resource)
     return resources
 
