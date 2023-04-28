@@ -15,7 +15,7 @@ data = {"base_url": config.serverpath}
 
 # Render one-off pages index
 env = Environment(loader=FileSystemLoader('theme/templates'))
-for page_name in ["index.html", "blog.html", "community.html", "workshops.html"]:
+for page_name in ["index.html", "get-involved.html", "get-help.html"]:
     with open(f"./output/{page_name}", "w") as newFile:
         template = env.get_template(page_name)
         newFile.write(template.render(**data))
