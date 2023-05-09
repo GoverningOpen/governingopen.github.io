@@ -58,7 +58,7 @@ def process_markdown_file(path_to_file: str) -> dict:
             else:
                 metadata_finished = True
 
-    data["content"] = markdown.markdown(content, extensions=["toc"])
+    data["content"] = markdown.markdown(content, extensions=["toc", "tables"])
     return data
 
 
