@@ -1,6 +1,7 @@
 Title: Burnout Checklist
 Challenge: maintainer-burnout
 Authors: Shauna Gordon-McKeon
+Contributors: Florian Schmidt, Test Automation Engineer (Developers for Future)
 Summary: A checklist for identifying burnout before it's too late.
 
 🚧 *NOTE: this checklist is a work in progress* 🚧
@@ -22,6 +23,8 @@ Here is a list of questions for maintainers and other open source contributors t
 * Are there specific users/contributors/collaborators who you have to work with, but wish you could avoid?
 
 * Are you anxious that you're being asked to do things well outside of your wheelhouse? When you're working on the project, how often are you afraid that you'll get something wrong?
+
+* Do you feel like you could ever take a break (weekend, sickness, vacation, family emergency) from the project? Or can't you leave it alone even for a single day without stuff piling up?
 
 * Do you get paid to work on your project? If yes, does that make you feel like you can't work on the things you enjoy? If no, do you feel like your work is taken for granted?
 
