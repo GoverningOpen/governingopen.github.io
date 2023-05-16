@@ -22,6 +22,8 @@
         <div class="row gx-lg-5 p-3">
             {% for resource in resources %}
 
+                {% if not resource.resourcelist %}
+
                 <div class="col-lg-6 col-xxl-4 mb-5">
                     <div class="card bg-light border-0 h-100">
                         <a class="text-decoration-none text-black" href="{{resource.url}}">
@@ -33,6 +35,8 @@
                         </a>
                     </div>
                 </div>
+
+                {% endif %}
             {% endfor %}
         </div>
     </div>

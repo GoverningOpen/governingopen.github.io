@@ -13,7 +13,7 @@ def is_metadata(line: str) -> dict:
     """Short helper function which takes a line and tests if it is metadata, with a colon dividing a key-value pair. Also
     checks that the key is one of the valid metadata tags, that it is lower-cased for use in the templates, and it strips 
     newlines from the values."""
-    VALID_METADATA_TAGS = ["title", "authors", "contributors", "challenge", "challenges", "summary"]
+    VALID_METADATA_TAGS = ["title", "authors", "contributors", "challenge", "challenges", "summary", "resourcelist"]
     tokens = line.split(":")
     if len(tokens) == 2 and tokens[0].lower() in VALID_METADATA_TAGS:
         return {tokens[0].lower(): tokens[1].strip("\n").strip(" ")}
